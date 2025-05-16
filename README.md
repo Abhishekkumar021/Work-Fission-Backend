@@ -1,10 +1,10 @@
-# WorkFission Backend
+# 🗄️ WorkFission Backend
 
 This is the backend for the Mini E-Commerce Platform. It is built with **Node.js**, **Express**, and **PostgreSQL** (using `pg-promise`). The backend provides RESTful APIs for product submission, retrieval, and detail viewing.
 
 ---
 
-## Directory Structure
+## 📁 Directory Structure
 
 ```
 workfission-backend/
@@ -27,11 +27,11 @@ workfission-backend/
 
 ---
 
-## Environment Variables
+## 🌐 Environment Variables
 
 Create a `.env` file in the root directory.
 
-### For Production (Cloud DB with SSL)
+### 🛬 For Production (Cloud DB with SSL)
 
 ```
 ORIGIN=http://localhost:5173
@@ -43,7 +43,7 @@ POSTGRESQL_PASSWORD=your_db_password
 POSTGRESQL_SSL_CA=your_ssl_ca_string
 ```
 
-### For Local Development
+### 🛫 For Local Development
 
 Use these values for local PostgreSQL testing:
 
@@ -57,7 +57,7 @@ POSTGRESQL_PASSWORD=Postgresql
 
 ---
 
-## Switching Between Production and Local Development
+## 🧭 Switching Between Production and Local Development
 
 - **Production:**  
   By default, `src/db/index.js` uses the production (SSL) options.
@@ -85,9 +85,9 @@ POSTGRESQL_PASSWORD=Postgresql
 
 ---
 
-## Setup Instructions
+## ⚙️ Setup Instructions
 
-### 1. Install Dependencies
+### 1. ✍️ Install Dependencies
 
 ```sh
 cd workfission-backend
@@ -98,7 +98,7 @@ npm install
 
 - Copy `.env` and fill in your PostgreSQL and CORS (frontend) details.
 
-### 3. Start the Server
+### 3. 🚀 Start the Server
 
 ```sh
 npm start
@@ -107,7 +107,7 @@ npm start
 
 ---
 
-## API Endpoints
+## 🔑 API Endpoints
 
 ### Base URL
 
@@ -137,7 +137,7 @@ http://localhost:3000
 
 ---
 
-## File Overview
+## 📜 File Overview
 
 - **[src/server.js](src/server.js)**  
   Main Express server setup, CORS, and route mounting.
@@ -156,14 +156,14 @@ http://localhost:3000
 
 ---
 
-## Database
+## 🧮 Database
 
 - The backend will automatically create a `products` table if it does not exist.
 - Table columns: `id`, `name`, `price`, `description`, `image_urls` (array), `created_at`.
 
 ---
 
-## What's Working
+## 📌 What's Working
 
 - Product submission (with multiple image URLs)
 - Product listing (all products)
@@ -174,12 +174,12 @@ http://localhost:3000
 
 ---
 
-## License
+## 📍 License
 
 ISC
 
 ---
 
-## Author
+## 📍 Author
 
 Abhishek Kumar
